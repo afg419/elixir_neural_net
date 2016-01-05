@@ -1,11 +1,11 @@
 defmodule Link do
-  defstruct weight: 0, source: Neuron.new, target: Neuron.new
+  defstruct weight: 0, source: Neuron.new
 
   def new do
     %Link{}
   end
 
-  def new(weight,source,target) do
-    %Link{weight: weight, source: source, target: target}
+  def new(weight,source) do
+    %Link{weight: weight, source: source}
   end
 end
